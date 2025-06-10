@@ -1,11 +1,9 @@
 import os
 import logging
 import google.generativeai as genai
-from dotenv import load_dotenv 
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from telegram.constants import ChatAction
-load_dotenv()
 
 # Настройка логирования для отладки на хостинге
 logging.basicConfig(
