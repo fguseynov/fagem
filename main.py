@@ -2,7 +2,8 @@ import os
 import logging
 import google.generativeai as genai
 # ИЗМЕНЕНИЕ: Добавляем ChatAction в импорты
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ChatAction
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.constants import ChatAction
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, CallbackQueryHandler
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
